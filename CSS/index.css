@@ -62,6 +62,10 @@ a::before {
     cursor: pointer;
 }
 
+button {
+    margin-top: 20px;
+
+}
 
         
 /* Reset CSS, makes tags equal to all browsers */
