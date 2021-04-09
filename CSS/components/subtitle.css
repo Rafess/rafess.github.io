@@ -1,0 +1,10 @@
+.subtitle {
+    font-size: 30px;
+    display: inline-block;
+    /* background-color: #383732; */
+    margin-top: 0;
+    font-family: Fira Code;
+    Color: #FFF;
+    text-shadow: 4px 4px 1px #000;
+
+}

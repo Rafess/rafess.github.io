@@ -63,16 +63,6 @@ a::before {
 }
 
 
-.main-subtitle {
-    display: inline-block;
-    background-color: #383732;
-    margin-top: 0;
-    font-family: Fira Code;
-    Color: #FFF;
-    text-shadow: 4px 4px 1px #000;
-
-}
-
         
 /* Reset CSS, makes tags equal to all browsers */
 /* display: block: permite mudança de width e height, nao pode ter nada na mesma linha, width padrão é o tamanho do pai, ja o height padrão é o tamanho do conteúdo */
