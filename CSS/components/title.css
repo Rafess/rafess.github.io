@@ -1,0 +1,11 @@
+.main-title { 
+    display: inline-block;   
+    justify-content: center;
+    background-color: #383732;
+    margin-bottom: 0;
+    font-family: Chakra Petch;
+    color: tomato;
+    font-size: 40px;
+    text-shadow: 4px 4px 1px #000;
+    
+}

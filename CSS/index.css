@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    border-bottom: 5px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        }
+
+img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding:0%;
+
+}
+
+nav {
+    text-align: right;
+        }
+a, .main-button{
+    display: inline-flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 15px;
+    font-family: "Fira Code";
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+a::before {
+    content: "";
+    background-color:#7D1424;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+
+}
+
+   
+
+.main-button {
+    display: inline-block;
+    background-color: #7D1424;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 0 black;
+    margin-right:0;
+    transition: transform 150ms linear;
+
+}
+
+.main-button:hover {
+    transform:scale(1.02);
+    color: black;
+    cursor: pointer;
+}
+
+
+.main-subtitle {
+    display: inline-block;
+    background-color: #383732;
+    margin-top: 0;
+    font-family: Fira Code;
+    Color: #FFF;
+    text-shadow: 4px 4px 1px #000;
+
+}
+
+        
+/* Reset CSS, makes tags equal to all browsers */
+/* display: block: permite mudança de width e height, nao pode ter nada na mesma linha, width padrão é o tamanho do pai, ja o height padrão é o tamanho do conteúdo */
+/* display: inline: não permite mudança de width e height, pode ter varias coisas na mesma linha, width e height é a palavra, tem comportamento de palavra */
+/* display: inline-block: elementos ficam na mesma linha, permite definição de largura e altura, tamanho padrão é o conteúdo, tem comportamento de palavra */
