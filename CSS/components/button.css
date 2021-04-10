@@ -1,0 +1,25 @@
+.button, .main-button{
+    background-color: #7D1424;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 0 black;
+    margin-right: 0;
+    transition: transform 150ms linear;
+
+}
+
+.button:hover, .main-button:hover{
+    transform:scale(1.02);
+    color: #000;
+    cursor: pointer;
+}
+
+.button {
+   display: flex;
+   padding-left: 20px;
+   padding-right: 20px;
+   height: 50px;
+   width: 40px;
+}

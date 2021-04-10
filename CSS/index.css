@@ -21,7 +21,7 @@ img {
 nav {
     text-align: right;
         }
-a, .main-button{
+a, main-button {
     display: inline-flex;
     align-items: center;
     color: #FFF;
@@ -40,33 +40,6 @@ a::before {
     margin-right: 10px;
 
 }
-
-   
-
-.main-button {
-    display: inline-block;
-    background-color: #7D1424;
-    height: 50px;
-    line-height: 50px;
-    padding-right: 20px;
-    padding-left: 20px;
-    box-shadow: 5px 5px 0 black;
-    margin-right:0;
-    transition: transform 150ms linear;
-
-}
-
-.main-button:hover {
-    transform:scale(1.02);
-    color: black;
-    cursor: pointer;
-}
-
-button {
-    margin-top: 20px;
-
-}
-
         
 /* Reset CSS, makes tags equal to all browsers */
 /* display: block: permite mudança de width e height, nao pode ter nada na mesma linha, width padrão é o tamanho do pai, ja o height padrão é o tamanho do conteúdo */

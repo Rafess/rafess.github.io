@@ -13,3 +13,7 @@
 #box h2 {
     margin-top: 0;
 }
+
+#box .button{
+    margin-top: 28px;
+}
