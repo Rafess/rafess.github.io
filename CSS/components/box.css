@@ -6,14 +6,10 @@
     padding: 25px 40px;
 }
 
-#box h1 {
+#box .title {
     margin-bottom: 20px;
 }
 
-#box h2 {
+#box .subtitle {
     margin-top: 0;
-}
-
-#box .button{
-    margin-top: 28px;
 }
