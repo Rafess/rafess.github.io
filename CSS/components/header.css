@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    border-bottom: 5px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        }
+
+.header .image {
+   display: inline-block;
+     height: 50px;
+    width: 50px;
+    margin: 0;
+    padding:0%;
+        
+        }
+
+/* Reset CSS, makes tags equal to all browsers */
+/* display: block: permite mudança de width e height, nao pode ter nada na mesma linha, width padrão é o tamanho do pai, ja o height padrão é o tamanho do conteúdo */
+/* display: inline: não permite mudança de width e height, pode ter varias coisas na mesma linha, width e height é a palavra, tem comportamento de palavra */
+/* display: inline-block: elementos ficam na mesma linha, permite definição de largura e altura, tamanho padrão é o conteúdo, tem comportamento de palavra */
