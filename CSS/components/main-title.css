@@ -1,0 +1,13 @@
+.main-title { 
+    font-family: Chakra Petch, sans-serif;
+    color: tomato;
+    font-size: 40px;
+    text-shadow: 4px 4px 1px #000;
+    
+}
+
+.main-title.-second{
+        color: #FFF;
+        text-shadow: none;
+        text-align: center;
+}
