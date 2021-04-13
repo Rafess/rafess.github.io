@@ -1,24 +1,24 @@
 .skill-tech{
     display: flex;
+    align-items: center;
     font-family: Chakra Petch;
     color: #FFF;
     font-size: 25px;
-    padding-left: 25%;
 }
 
 .skill-tech .icon{
     margin-right: 25px;
+    height: 80px;
+    width: 80px;
     
-    
-}
-
-.skill-tech img{
-    height: 90px;
-    width: 90px;
 }
 
 .skill-tech .right{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    }
+
+    .skill-tech .title{
+        margin-bottom: 10px;
     }
