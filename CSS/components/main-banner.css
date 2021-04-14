@@ -1,4 +1,4 @@
-.banner {
+.main-banner {
 box-sizing: border-box;
 background-image: url(../../assets/img/Rafess\ no\ Rockfeller.jpg);
 background-size: 100%;
@@ -8,7 +8,7 @@ background-repeat: no-repeat;
 border-bottom: 10px solid #000;
 }
 
-.banner .wrapper {
+.main-banner .wrapper {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -16,12 +16,12 @@ border-bottom: 10px solid #000;
     margin-right: 27%;
 }
 
-.banner .box {
+.main-banner .box {
     margin-bottom: 30px;
 
 }
 
-.banner .navigation {
+.main-banner .navigation {
     display: flex;
     justify-content: space-around;
 }

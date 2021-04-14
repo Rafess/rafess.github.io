@@ -7,19 +7,12 @@
 
  .card-project:hover{
     transform: scale(1.03);
-    transition: 300ms transform cubic-bezier(0.42, 0, 0.47, 2.71);
+    transition: 300ms transform ease-in-out;
 }
 
 .card-project .logo {
-    margin-bottom: 10px;
     width: 200px;
     border: 3px solid #7D1424;
     box-shadow: 4px 4px 10px #333;
 }
 
-.card-project .caption {
-    font-family: Chakra Petch;
-    color: #FFF;
-    font-size: 30px;
-    text-align: center;
-} */

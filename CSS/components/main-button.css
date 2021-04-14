@@ -1,4 +1,4 @@
-.button {
+.main-button {
     display: inline-block;
     align-items: center;
     color: #FFF;
@@ -17,7 +17,7 @@
     text-decoration: none;
 }
 
-.button:hover {
+.main-button:hover {
     transform:scale(1.02);
     color: #000;
     cursor: pointer;

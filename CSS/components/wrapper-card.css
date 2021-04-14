@@ -1,0 +1,12 @@
+.wrapper-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    }
+
+.wrapper-card .card-project {
+    margin-right: 20px;
+    margin-left: 20px;
+ } 
