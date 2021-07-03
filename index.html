@@ -20,14 +20,18 @@
     <link rel="stylesheet" href="CSS/components/wrapper-skill.css">
     <link rel="stylesheet" href="CSS/components/wrapper-card.css">
     <link rel="stylesheet" href="CSS/components/card-project.css">
+    <link rel="stylesheet" href="CSS/components/wrapper-carousel.css">
+    <link rel="stylesheet" href="CSS/components/carousel-box.css">
+    <link rel="stylesheet" href="CSS/components/button-arrow.css">
+    <link rel="stylesheet" href="CSS/components/main-text.css">
 </head>
 <body>
     <header class="main-header">
         <img class="image" src="assets/img/Logo Rafa 1.png" alt="logo Rafael de Oliveira">
         <nav>
-            <a class="main-action" href="" lang="en">Skills</a>
-            <a class="main-action" href="" lang="en">Projects</a>
-            <a class="main-action" href="" lang="en">About</a>
+            <a class="main-action" href="#skills" lang="en">Skills</a>
+            <a class="main-action" href="#projects" lang="en">Projects</a>
+            <a class="main-action" href="#about" lang="en">About</a>
             <a class="main-action" href="" lang="en">Contact</a>
             <a class="main-button" href="" lang="en">Download CV</a>
            
@@ -45,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section class="main-section">
+    <section id="skills" class="main-section">
         <h1 class="main-title -second">Skills</h1>
 
         <div class="wrapper-skill">
@@ -123,7 +127,7 @@
             </article>
         </div>
     </section>
-    <section class="main-section -second">
+    <section id="projects" class="main-section -second">
         <h1 class="main-title -second">Projects</h1>
         <div class="wrapper-card">
             <a href="">
@@ -144,6 +148,26 @@
                 </figure>
             </a>
     </div>
+    </section>
+    <section id="about" class="main-section -third">
+        <h1 class="main-title -second">About</h1>
+        <button class="button-arrow -left"><span class="content">Back</span></button>
+        
+        <figure class="node-card">
+            <figcaption class="title">1999</figcaption>
+            <img src="assets/img/Rafess photo.jpg" alt="" class="logo">
+        </figure>
+        <button class="button-arrow -right"><span class="content">Forward</span></button>
+        
+
+
+
+        <div class="main-text">
+            <p class="description">Nascido no Brasil no ano de 1999.<br> Atualmente, desenvolvedor FrontEnd independente, Rafael já trabalhou nas mais diversas áreas. Formado em Direito pela Universidade Dinâmica das Cataratas.<br>
+            Entrou na área de TI por acaso e se apaixonou pela programação. No momento ainda não tem uma especialidade, mas é aficionado em HTML, CSS e JavaScript.<br>
+            Rafael também já participou de cursos como Imersãodev_ da Alura, Learn to Program: The Fundamentals by University of Toronto, etc.<br>
+            Tem o sonho de morar fora do país trabalhando como programador.</p>
+        </div>
     </section>
 </body>
 </html>

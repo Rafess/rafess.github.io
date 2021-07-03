@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .carousel-box {
+    display: block;
+    align-items: center;
+    max-width: 960px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;    
+    scroll-behavior: smooth;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: #000;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > .slide {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 8px;
+    background: tomato;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slides > .slide:target {
+    transform: scale(1.02);
+  }
+  
+  .carousel-box img {
+    object-fit:contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-box .slide-reference {
+    display: inline-flex;
+    color: #FFF;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 0 15px 15px 0;
+    position: relative;
+    margin-right: 50px;
+    font-size: 25px;
+  }
+  .carousel-box > .slide-reference:active {
+    top: 1px;
+  }
+  

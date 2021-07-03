@@ -1,0 +1,11 @@
+.main-text{
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.main-text .description{
+    color: #FFF;
+    font-family: Fira Code;
+    font-size: 15px;
+    line-height: 1.4;
+}
