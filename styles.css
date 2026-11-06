@@ -417,6 +417,7 @@ section{
     .fact span:last-child{
         text-align:right
     }
+    /* ------- PROJECTS ----- */
 .projects{
     background:#100e0d
 }
@@ -461,7 +462,7 @@ section{
     line-height:1.75;
     color:var(--muted);
     max-width:410px
-}
+} 
 .tags{
         display:flex;
     gap:8px;
@@ -475,6 +476,7 @@ section{
     border:1px solid rgba(196,155,98,.28);
     padding:6px 9px
 }
+/* ------ EXPERIENCE ----- */
 .experience {
   position: relative;
     isolation: isolate;
@@ -720,6 +722,7 @@ section{
   }
    
 }
+/* ----- CONTACT ----- */
 .contact{
     min-height:440px;
     text-align:center;
@@ -812,10 +815,22 @@ footer{
     padding:25px
 }
 .contact{
+    position: relative;
         min-height:390px
-    }footer{
-        padding:20px 6vw;
+    }
+    
+footer{
+    padding:20px 6vw;
     gap:14px;
     flex-wrap:wrap
 }
+}
+.horse-gif {
+  max-width: 8%;
+  height: auto;
+  position:absolute;
+  top: 60%;
+  margin-top: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
