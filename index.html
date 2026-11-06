@@ -5,19 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#100e0d">
 <meta name="description" content="Rafael de Oliveira, desenvolvedor Full Stack. Código, sistemas e histórias que merecem ser descobertas.">
+
 <title>Rafael de Oliveira | Desenvolvedor Full Stack</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+   
 <nav>
   <a class="brand" href="#inicio">RAFESS<span>.</span></a>
   <div class="navlinks"><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></div>
 </nav>
 <header class="hero" id="inicio">
-  <div class="forest"></div><div class="curtain left"></div><div class="curtain right"></div>
+
+
+  <div class="forest">
+     <div class="forest-layer forest-back"></div>
+    <div class="forest-layer forest-middle"></div>
+    <div class="forest-layer forest-front"></div>
+    <div class="curtains">
+      <div class="curtain curtain-left"></div>
+      <div class="curtain curtain-right"></div>
+    </div>
+  </div>
   <div class="hero-content">
     <div class="eyebrow mono">Desenvolvedor Full Stack · Brasil</div>
     <h1>Há código<br>nas <em>entrelinhas.</em></h1>
@@ -29,26 +43,26 @@
 </header>
 
 <section class="about" id="sobre">
-  <div class="section-head"><div><div class="mono">01 / Quem está por trás</div><h2>Prazer, Rafael.</h2></div><p class="section-note">Nem todo problema aparece no primeiro olhar. Gosto de investigar até encontrar a solução que realmente importa.</p></div>
+  <div class="section-head" data-reveal><div><div class="mono">01 / Quem está por trás</div><h2>Prazer, Rafael.</h2></div><p class="section-note">Nem todo problema aparece no primeiro olhar. Gosto de investigar até encontrar a solução que realmente importa.</p></div>
   <div class="about-grid">
-    <div class="about-copy">
+    <div class="about-copy" data-reveal>
       <p>Sou desenvolvedor Full Stack com experiência profissional em <strong>React, TypeScript, Node.js e MySQL</strong>, trabalhando na construção e evolução de aplicações usadas no dia a dia de operações reais.</p>
       <p>Minha trajetória começou no frontend e cresceu para o backend. Hoje, gosto de entender o sistema por inteiro: da interface e experiência de uso às regras de negócio, APIs e persistência de dados.</p>
       <p>Acredito em código legível, colaboração e decisões técnicas que resolvem problemas concretos, não apenas os que ficam bonitos no quadro.</p>
     </div>
-    <div class="facts">
-      <div class="fact"><span>Atuação</span><span>Full Stack</span></div>
-      <div class="fact"><span>Frontend</span><span>React · TypeScript</span></div>
-      <div class="fact"><span>Backend</span><span>Node.js · Express · Prisma</span></div>
-      <div class="fact"><span>Dados</span><span>MySQL · MongoDB</span></div>
-      <div class="fact"><span>Em evolução</span><span>Full Stack Open · Engenharia de software</span></div>
+    <div class="facts" >
+      <div class="fact" data-reveal><span>Atuação</span><span>Full Stack</span></div>
+      <div class="fact" data-reveal><span>Frontend</span><span>React · TypeScript</span></div>
+      <div class="fact" data-reveal><span>Backend</span><span>Node.js · Express · Prisma</span></div>
+      <div class="fact" data-reveal><span>Dados</span><span>MySQL · MongoDB</span></div>
+      <div class="fact" data-reveal><span>Em evolução</span><span>Full Stack Open · Engenharia de software</span></div>
     </div>
   </div>
 </section>
 
-<section class="projects" id="projetos">
-  <div class="section-head"><div><div class="mono">02 / Arquivo de casos</div><h2>Trabalhos &amp; experimentos.</h2></div><p class="section-note">Alguns projetos nascem de necessidades reais. Outros, da vontade de aprender algo novo.</p></div>
-  <div class="project-grid">
+<section class="projects" id="projetos" >
+  <div class="section-head" ><div><div class="mono">02 / Arquivo de casos</div><h2>Trabalhos &amp; experimentos.</h2></div><p class="section-note">Alguns projetos nascem de necessidades reais. Outros, da vontade de aprender algo novo.</p></div>
+  <div class="project-grid" >
     <article  class="project" data-mark="01"><div class="project-top"><span class="mono">Experiência profissional</span><span class="mono">CASE 001</span></div><h3>Warehouse Management</h3><p>Evolução de um WMS utilizado por mais de 2.000 pessoas, cobrindo estoque, pedidos, picking, packing, triagem e devoluções. Atuação em frontend, APIs e regras de negócio.</p><div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Prisma</span><span class="tag">MySQL</span></div></article>
     <article class="project" data-mark="02"><div class="project-top"><span class="mono">Projeto pessoal</span><span class="mono">CASE 002</span></div><h3>GameJournal</h3><p>Uma estante digital para registrar jogos, acompanhar experiências e construir um diário pessoal de jogador. Projeto de estudo com catálogo externo e persistência própria.</p><div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">MySQL</span><span class="tag">RAWG API</span></div></article>
     <article class="project" data-mark="03"><div class="project-top"><span class="mono">Projeto de estudo</span><span class="mono">CASE 003</span></div><h3>Payment API</h3><p>API de pagamentos construída para praticar fundamentos de backend financeiro, com validações, persistência e idempotência para evitar operações duplicadas.</p><div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">TypeScript</span><span class="tag">Prisma</span></div></article>
@@ -57,17 +71,20 @@
 </section>
 
 <section class="experience" id="experiencia">
-  <div class="section-head"><div><div class="mono">03 / Caminho percorrido</div><h2>Experiência.</h2></div><p class="section-note">Aprender, construir, revisar, melhorar. E repetir.</p></div>
-  <div class="experience-row"><div class="experience-date">2023 — 2026</div><div><h3>Desenvolvedor Full Stack · WeDrop</h3><p>Desenvolvimento e manutenção de sistemas para operações de e-commerce e logística. Construção de funcionalidades para WMS, integrações com serviços externos, APIs REST, componentes reutilizáveis e colaboração em decisões técnicas e code reviews.</p></div></div>
-  <div class="experience-row"><div class="experience-date">2022</div><div><h3>Desenvolvedor Frontend · Infortronics</h3><p>Início da trajetória profissional em desenvolvimento web, trabalhando com JavaScript e construção de interfaces.</p></div></div>
+  <div class="section-head"><div><div class="mono" data-reveal>03 / Caminho percorrido</div><h2>Experiência.</h2></div><p class="section-note">Aprender, construir, revisar, melhorar. E repetir.</p></div>
+  <div class="experience-row"><div class="experience-date" data-reveal>2023 — 2026</div><div><h3>Desenvolvedor Full Stack · WeDrop</h3><p>Desenvolvimento e manutenção de sistemas para operações de e-commerce e logística. Construção de funcionalidades para WMS, integrações com serviços externos, APIs REST, componentes reutilizáveis e colaboração em decisões técnicas e code reviews.</p></div></div>
+  <div class="experience-row"><div class="experience-date" data-reveal>2022</div><div><h3>Desenvolvedor Frontend · Infortronics</h3><p>Início da trajetória profissional em desenvolvimento web, trabalhando com JavaScript e construção de interfaces.</p></div></div>
 </section>
 
 <section class="contact" id="contato">
-  <div class="mono">04 / O próximo capítulo</div>
-  <h2>Vamos construir algo?</h2>
-  <p>Boas conversas podem levar a projetos interessantes. A minha caixa de entrada está aberta.</p>
+  <div class="mono" data-reveal>04 / O próximo capítulo</div>
+  <h2 data-reveal>Vamos construir algo?</h2>
+  <p data-reveal>Boas conversas podem levar a projetos interessantes. A minha caixa de entrada está aberta.</p>
   <div class="contact-links"><a href="https://www.linkedin.com/in/rafess/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Rafess" target="_blank" rel="noreferrer">GitHub ↗</a></div>
 </section>
 <footer><span>© 2026 Rafael de Oliveira</span><span>Feito com intenção. E um pouco de mistério.</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
