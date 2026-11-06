@@ -130,32 +130,41 @@ if (aboutSection) {
     ease: "power2.out"
   }, "-=0.3");
 }
-const curtainTimeline = gsap.timeline();
+const curtainMedia = gsap.matchMedia();
 
-curtainTimeline
-  .to(".curtain-left", {
-    xPercent: -87,
-    duration: 2,
-    ease: "power3.inOut"
-  })
+curtainMedia.add(
+  {
+    isMobile: "(max-width: 600px)",
+    isDesktop: "(min-width: 601px)"
+  },
+  (context) => {
+    const { isMobile } = context.conditions;
 
-  .to(".curtain-right", {
-    xPercent: 87,
-    duration: 2,
-    ease: "power3.inOut"
-  }, "<")
+    const movement = 87;
 
-//   .from(".hero-content", {
-//     opacity: 0,
-//     y: 20,
-//     duration: 0.7,
-//     ease: "power2.out"
-//   })
+    const curtainTimeline = gsap.timeline();
 
-  .from(".hero-content", {
+    curtainTimeline
+      .to(".curtain-left", {
+        xPercent: -movement,
+        duration: isMobile ? 1.5 : 2,
+        ease: "power3.inOut"
+      })
+      .to(
+        ".curtain-right",
+        {
+          xPercent: movement,
+          duration: isMobile ? 1.5 : 2,
+          ease: "power3.inOut"
+        },
+        "<"
+      )
+     .from(".hero-content", {
     opacity: 0,
     y: 35,
     // duration: 0.05,
     ease: "power2.out"
   }, "-=0.3");
+  }
+);
 }

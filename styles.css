@@ -155,17 +155,25 @@ nav{
   );
 }
 .curtains {
-  position: fixed;
+  position: absolute;
   inset: 0;
-  z-index: 1000;
+  z-index: 10;
+
   display: flex;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
   pointer-events: none;
 }
+
 .curtain {
-  width: 50%;
-  height: 100%;
   position: relative;
-  overflow: hidden;
+
+  flex: 0 0 50%;
+  width: 50%;
+  min-width: 0;
+  height: 100%;
 
   background-color: #650b12;
 
@@ -182,16 +190,39 @@ nav{
     ),
     repeating-linear-gradient(
       90deg,
-      #3d050a 0px,
+      #3d050a 0,
       #850e19 12px,
       #a51b27 24px,
       #59070e 38px,
       #3d050a 50px
     );
+}
 
-  box-shadow:
-    inset -15px 0 25px rgba(0, 0, 0, 0.35),
-    inset 10px 0 20px rgba(255, 80, 80, 0.08);
+.curtain-left {
+  transform-origin: left center;
+}
+
+.curtain-right {
+  transform-origin: right center;
+}
+@media (max-width: 600px) {
+  .curtain {
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(20, 0, 0, 0.6),
+        transparent 30%,
+        rgba(20, 0, 0, 0.4)
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #3d050a 0,
+        #850e19 8px,
+        #a51b27 16px,
+        #59070e 25px,
+        #3d050a 34px
+      );
+  }
 }
 /* .curtain {
   width: 50%;
