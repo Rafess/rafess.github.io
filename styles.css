@@ -668,40 +668,6 @@ section{
     grid-row: 2;
   }
 
-  .experience-row:not(:last-child)::before {
-    
-  content: "";
-
-  position: absolute;
-
-  left: calc(1.75rem + 5px);
-  top: calc(1.75rem + 12px);
-
-  bottom: calc(-2rem - 1.75rem - 12px);
-
-  width: 3px;
-
-  background: linear-gradient(
-    90deg,
-    #650b12,
-    #c32231,
-    #86101c
-  );
-
-  border-radius: 50%;
-
-  box-shadow:
-    0 0 5px rgba(180, 20, 35, 0.7),
-    0 0 12px rgba(180, 20, 35, 0.3);
-
-  transform: rotate(15deg);
-  transform-origin: top center;
-
-  --thread-angle: 15deg;
-
-  z-index: 1;
-
-  }
    .experience-row:not(:last-child)::before {
     --thread-angle: 10deg;
   }
@@ -818,7 +784,7 @@ footer{
     position: relative;
         min-height:390px
     }
-    
+
 footer{
     padding:20px 6vw;
     gap:14px;
@@ -833,4 +799,16 @@ footer{
   margin-top: 4rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+@media(max-width: 700px) {
+    .horse-gif {
+        max-width: 20%;
+        top: 65%;
+    }
+}
+@media(max-width: 1024px) {
+    .horse-gif {
+        max-width: 15%;
+        top: 60%;
+    }
 }
