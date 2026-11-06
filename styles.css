@@ -49,10 +49,15 @@ nav{
     justify-content:space-between;
     padding:0 7vw;
     border-bottom:1px solid var(--line);
-    position:absolute;
+     position: fixed;
     top:0;
     width:100%;
-    z-index:3
+    z-index:3;
+    background: rgba(12, 20, 19, 0.58);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    transition: background 0.3s ease;
 }
 .brand{
     font-family:'Playfair Display',serif;
